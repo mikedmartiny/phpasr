@@ -159,5 +159,3 @@ class database {
 		$this->pdo = null;
 	}
 }
-
-?>

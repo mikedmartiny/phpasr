@@ -41,5 +41,3 @@ return array(
 		'db_port' => '3306'
 	),
  );
- 
-?>

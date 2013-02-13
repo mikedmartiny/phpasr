@@ -6,7 +6,7 @@
  */
 ?>
 <div id="body" class="group width">
-	<div id="breadcrum">Repo > PHP > Syntax Highlighter</div>
+	<div id="breadcrum">Home</div>
 	<div id="snippet">
 		<div id="snippet-header">Syntax Highlighter <div id="snippet-meta">06/17/2012 &bull; Version 001</div></div>
 		<div class="code">

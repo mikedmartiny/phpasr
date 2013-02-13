@@ -13,5 +13,3 @@
  * adding 'module_name/action_name'
  */
 return array();
-
-?>

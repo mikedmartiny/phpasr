@@ -87,6 +87,16 @@ class app {
 		$routing = new routing($config['default_module']);
 
 		/** 
+		 * - App class init
+		 * -----------------------------------------------------------
+		 *
+		 * Includer the init file inside of classes to include the 
+		 * classes inside app classes directory.
+		 *
+		 */
+		require_once appClasses.'init.php';	
+
+		/** 
 		 * - Start an app
 		 * -----------------------------------------------------------
 		 *
