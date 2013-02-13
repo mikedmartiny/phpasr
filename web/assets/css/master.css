@@ -1,0 +1,241 @@
+/*
+********************
+WebSite: 
+Name: style.css
+Type: css
+Version: 3.0
+Author: FireDart
+********************
+*/
+/*Import Reset */
+@import url("reset.css");
+body {
+	background: #ffffff;
+	color: #42423d;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+/* Width */
+.width {
+	width: 960px;
+	margin: 0px auto;
+}
+
+/* Header */
+#header {
+	background: #323236 url('../img/header.png');
+	border-bottom: 1px solid #666666;
+	height: 63px;
+	width: 100%;
+	position: fixed;
+	z-index: 1001;
+	top: 0;
+}
+#header #logo {
+	border-right: 1px solid #666666;
+	float: left;
+	font-size: 28px;
+	color: #ffffff;
+	height: 56px;
+	padding: 7px 14px 0px 0px;
+	margin: 0px;
+	line-height: 1.5em;
+}
+#header ul#navigation {
+	float: left;
+}
+#header ul#navigation li {
+	float: left;
+}
+#header ul#navigation li:hover, #header ul#navigation li.active {
+	background: #ffffff;
+}
+#header ul#navigation li a {
+	border-right: 1px solid #666666;
+	color: #ffffff;
+	font-size: 21px;
+	padding: 18px 14px;
+	line-height: 3.1em;
+}
+#header ul#navigation li:hover a, #header ul#navigation li.active a {
+	color: #222222;
+}
+#header ul#navigation li ul {
+	display: none;
+}
+#header #search {
+	background: #ffffff;
+	float: left;
+	padding: 7px;
+	margin: 16px 0px 0px 14px;
+	width: 200px;
+}
+#user {
+	float: right;
+	margin: 14px 0px 0px 0px;
+
+	min-width: 200px;
+}
+#user #username {
+	color: #ffffff;
+	float: left;
+	margin: 7px 10px 0px 0px;
+}
+#user #username a {
+	color: #ffffff;
+	font-weight: bold;
+}
+#user #controls {
+	background: #ffffff;
+	float: right;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+#user #controls #settings {
+	border-right: 1px solid #eeeeee;
+	float: left;
+	margin: 0px 7px 0px 0px;
+	padding: 7px 7px 7px 7px;
+}
+#user #controls #logout {
+	float: right;
+	margin: 0px 5px 0px 0px;
+	padding: 7px 7px 7px 0px;
+}
+/* Body */
+#body {
+	margin-top: 63px;
+	padding-top: 14px;
+}
+#body #breadcrum {
+	background: #efefef;
+	border: 1px solid #dddddd;
+	padding: 7px;
+	margin: 7px 0 0 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Footer */
+#footer {
+	border-top: 1px solid #dddddd;
+	margin-top: 14px;
+}
+
+/* Snippet */
+#snippet {
+	margin: 21px 0 0 0;
+	width: 100%;
+}
+#snippet #snippet-header {
+	background: #323236 url('../images/header.png');
+	border: 1px solid #666666;
+	color: #ffffff;
+	font-size: 21px;
+	padding: 7px 14px;
+
+	-webkit-border-radius: 3px 3px 0px 0px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	-o-border-radius: 3px 3px 0px 0px;
+	-khtml-border-radius: 3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;
+}
+#snippet #snippet-header #snippet-meta {
+	font-size: 14px;
+	float: right;
+	padding: 3px 0px;
+}
+/* Code */
+.code {
+	background: #333333;
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	color: #ffffff;
+	white-space: pre;
+	font-family: monospace;
+	display: block;
+	padding: 7px 21px;
+	-webkit-border-radius: 0px 0px 3px 3px;
+	-moz-border-radius: 0px 0px 3px 3px;
+	-o-border-radius: 0px 0px 3px 3px;
+	-khtml-border-radius: 0px 0px 3px 3px;
+	border-radius: 0px 0px 3px 3px;
+}
+
+.fields {
+	background: #efefef;
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	color: #000000;
+	font-family: monospace;
+	display: block;
+	padding: 7px 21px;
+	-webkit-border-radius: 0px 0px 3px 3px;
+	-moz-border-radius: 0px 0px 3px 3px;
+	-o-border-radius: 0px 0px 3px 3px;
+	-khtml-border-radius: 0px 0px 3px 3px;
+	border-radius: 0px 0px 3px 3px;
+}
+
+/* Comments */
+#comments {
+	margin: 21px 0 0 0;
+	width: 100%;
+}
+#comments #comments-header {
+	background: #efefef url('../images/header-light.png');
+	border: 1px solid #dddddd;
+	color: #666666;
+	font-size: 21px;
+	padding: 7px 14px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+#comments #comments-header #comments-meta {
+	font-size: 14px;
+	float: right;
+	padding: 3px 0px;
+}
+.comment {
+	border-bottom: 1px dashed #dddddd;
+	float: left;
+	margin: 14px 0px;
+	padding: 0px 0px 14px 0px;
+	width: 100%;
+}
+.comment .comment-user {
+	float: left;
+	width: 60px;
+}
+.comment .comment-user img {
+	background: #efefef url('../images/header-light.png');
+	padding: 5px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-khtml-border-radius: 50%;
+	border-radius: 50%;
+}
+.comment .comment-message {
+	float: left;
+	margin: 0 0 0 14px;
+}
+.comment .comment-message .comment-user-says {
+	font-style: italic;
+	font-weight: bold;
+}s
