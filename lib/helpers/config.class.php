@@ -6,7 +6,9 @@
  */
 
 class config {
-	public static function get($key) {
+    public static function get($key) {
+        $config = require appConfig . 'config.php';
 
-	}
+        return $config[$key];
+    }
 }

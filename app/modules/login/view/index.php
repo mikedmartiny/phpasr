@@ -6,19 +6,22 @@
  */
 ?>
 <div id="body" class="group width">
-	<div id="breadcrum">Home &gt; Login</div>
-	<div id="login">
-		<legend>Login</legend>
-		<form action="" method="POST">
-			<fieldset>
-				<label>Email</label><br><br>
-				<input type="text" name="loginEmail"><br><br><br>
+    <div id="breadcrum">Home &gt; Login</div>
+    <div id="login">
+        <legend>Login</legend>
+        
+        <form action="" method="POST">
+            <fieldset>
+                <label>Email</label><br><br>
+                <input type="text" name="loginEmail"><br><br><br>
 
-				<label>Password</label><br><br>
-				<input type="password" name="loginPassword"><br><br><br>
+                <label>Password</label><br><br>
+                <input type="password" name="loginPassword"><br><br><br>
 
-				<button type="button" name="login">Login</button>
-			</fieldset>
-		</form>
-	</div>
+                <button type="submit" name="login">Login</button>
+            </fieldset>
+        </form>
+        
+        <?php echo $this->messageWriter(); ?>
+    </div>
 </div>
