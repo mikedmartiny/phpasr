@@ -13,13 +13,13 @@
         <form action="" method="POST">
             <fieldset>
                 <label>Username</label><br><br>
-                <input type="text" name="username"><br><br><br>
+                <input type="text" name="username" value="<?php echo @$_POST['username']; ?>"><br><br><br>
                 
                 <label>Email</label><br><br>
-                <input type="text" name="email"><br><br><br>
+                <input type="text" name="email" value="<?php echo @$_POST['email']; ?>"><br><br><br>
                 
-                <label>Confirm Password</label><br><br>
-                <input type="text" name="email"><br><br><br>
+                <label>Confirm Email</label><br><br>
+                <input type="text" name="confirmEmail" value="<?php echo @$_POST['confirmEmail']; ?>"><br><br><br>
 
                 <label>Password</label><br><br>
                 <input type="password" name="password"><br><br><br>

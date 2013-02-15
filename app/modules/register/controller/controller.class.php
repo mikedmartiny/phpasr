@@ -12,7 +12,7 @@ class pageController extends siteController {
             $this->register = $this->userActions->register();
             
             if ($this->register[0] == false) {
-                $this->addMessage('error', $this->login[1]);
+                $this->addMessage('error', $this->register[1]);
             } else if ($this->register[0] == truw) {
                 echo 1;
             }            

@@ -13,7 +13,7 @@
         <form action="" method="POST">
             <fieldset>
                 <label>Email</label><br><br>
-                <input type="text" name="loginEmail"><br><br><br>
+                <input type="text" name="loginEmail" value="<?php echo @$_POST['loginEmail']; ?>"><br><br><br>
 
                 <label>Password</label><br><br>
                 <input type="password" name="loginPassword"><br><br><br>

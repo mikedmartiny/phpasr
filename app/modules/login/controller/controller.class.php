@@ -9,7 +9,7 @@ class pageController extends siteController {
     public function index() {
         if (isset($_POST['login'])) {
             $this->userActions = new user();
-            $this->login = $this->userActions->secureLogin();
+            $this->login = $this->userActions->login();
             
             if ($this->login[0] == false) {
                 $this->addMessage('error', $this->login[1]);

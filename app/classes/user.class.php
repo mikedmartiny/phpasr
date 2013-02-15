@@ -35,7 +35,7 @@ class user extends message {
      * module
      *
      */
-    public function secureLogin() {
+    public function login() {
         if (isset($_POST['loginEmail']) && isset($_POST['loginPassword'])) {
             $this->loginEmail = trim($_POST['loginEmail']);
             $this->loginPassword = trim($_POST['loginPassword']);
@@ -64,7 +64,29 @@ class user extends message {
     }
     
     public function loggedIn() {
-        return isset(session::get('userID')) ? true : false;
+        return session::get('userID');
+    }
+    
+    public function register() {
+        if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['confirmEmail']) && isset($_POST['password']) && isset($_POST['confirmPassword'])) {
+            $this->username = trim($_POST['username']);
+            $this->email = trim($_POST['email']);
+            $this->confirmEmail = trim($_POST['confirmEmail']);
+            $this->password = trim($_POST['password']);
+            $this->confirmPassword = trim($_POST['confirmPassword']);
+            $this->e = array();
+            
+            if (!empty($this->username) && !empty($this->email) && !empty($this->confirmEmail) && !empty($this->password) && !empty($this->confirmPassword)) {
+                $this->db = new database();
+                $this->db->query("SELECT `userID` FROM `user` WHERE `username`=:username", array(':username' => $this->username));
+                
+                if ($this->db->numRow() != 0) {
+                   echo 1;
+                }
+            }
+            
+            return array(false, 'register fields empty');
+        }
     }
 }
 
