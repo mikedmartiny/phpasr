@@ -109,9 +109,10 @@ class app {
         require_once appModules . $routing->module . '/controller/controller.class.php';
 
         $init = new pageController();
-        $init->module = $routing->module;
-        $init->action = $routing->action;
-        $init->meta = $meta;
+        $init->module   = $routing->module;
+        $init->action   = $routing->action;
+        $init->arg      = $routing->arg;
+        $init->meta     = $meta;
         $init->showTemplate();
     }
 }

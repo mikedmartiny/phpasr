@@ -24,6 +24,16 @@ class siteController extends message {
      *
      */
     public $action;
+    
+    /**
+     * - Action
+     * -----------------------------------------------------------
+     *
+     * Sometimes we want to pass get variables through to our 
+     * controller
+     *
+     */
+    public $arg;
 
     /**
      * - Page Content
