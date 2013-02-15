@@ -12,13 +12,22 @@
         
         <form action="" method="POST">
             <fieldset>
+                <label>Username</label><br><br>
+                <input type="text" name="username"><br><br><br>
+                
                 <label>Email</label><br><br>
-                <input type="text" name="loginEmail"><br><br><br>
+                <input type="text" name="email"><br><br><br>
+                
+                <label>Confirm Password</label><br><br>
+                <input type="text" name="email"><br><br><br>
 
                 <label>Password</label><br><br>
-                <input type="password" name="loginPassword"><br><br><br>
+                <input type="password" name="password"><br><br><br>
+                
+                <label>Confirm Password</label><br><br>
+                <input type="password" name="confirmPassword"><br><br><br>
 
-                <button type="submit" name="login">Login</button>
+                <button type="submit" name="register">Register</button>
             </fieldset>
         </form>
         

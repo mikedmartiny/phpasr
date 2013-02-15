@@ -64,7 +64,7 @@ class user extends message {
     }
     
     public function loggedIn() {
-        return isset($_SESSION['userID']) ? true : false;
+        return isset(session::get('userID')) ? true : false;
     }
 }
 

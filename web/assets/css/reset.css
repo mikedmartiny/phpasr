@@ -53,7 +53,7 @@ FireDart's CSS Reset
 
 /* Links */
 	a:link,a:visited {color: #104e8b; text-decoration: none;}
-	a:hover,a:active {color: #3880C7; text-decoration: none; outline: none;}
+	a:hover,a:active {color: #104e8b; text-decoration: none; outline: none;}
 
 /* Lists */
 	ul, ol {list-style: none}
